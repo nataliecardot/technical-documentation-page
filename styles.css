@@ -1,4 +1,101 @@
+html {
+  /* Applying so that 1rem will equal 10px for easier calculation; default font-size in browsers is 16px, and 62.5% of 16px is 10px. 0.1rem now equals 1px, 1.6rem = 16px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 1fr;
+
+  grid-template-areas:
+    "nav main"
+    "nav main"
+}
+
 /* Tells browser to account for any border and padding in the values specified for an element's width and height */
 * {
   box-sizing: border-box;
+}
+
+nav {
+  grid-area: nav;
+  /* Alternative to position: fixed that is compatible with CSS grid to keep navbar in place. Doesn't remove anything from document flow */
+  position: sticky;
+  /* Keeps it at top of screen at all times */
+  top: 0;
+  height: 100vh;
+  background: linear-gradient(#f4f4f4, #cbcbcb);
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: Lato, sans-serif;
+  padding: 3rem 0 0 3.75rem;
+  margin-top: 0;
+}
+
+/* Removing top margin of first h2 element in main */
+section:first-of-type h2 {
+  margin-top: 0;
+}
+
+.nav-link {
+  width: 100%;
+  color: black;
+}
+
+.nav-link-container {
+  padding: 0.5rem 0 0.5rem 3.75rem;
+  margin: 0.5rem 0;
+}
+
+.nav-link-container:hover {
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(95, 176, 199, 1) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+  padding: 3rem;
+}
+
+main a {
+  color: #5eb0c7;
+  font-weight: 400;
+}
+
+code {
+  display: block;
+  text-align: left;
+  /* Preserves whitespace */
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(95, 176, 199, 1) 100%);
+  color: #fff;
+  border-radius:5px;
+  font-size: 14px;
+  padding:15px;
+  margin:10px;
+  transition-property: transform, box-shadow;
+  transition-duration: .25s;
+  transition-timing-function: linear;
+}
+
+code:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(33,33,33,.5);
 }
