@@ -36,15 +36,24 @@ nav {
 }
 
 h1 {
-  font-size: 1.5em;
-  font-family: Lato, sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 3rem 0 0 3.75rem;
   margin-top: 0;
+}
+
+i {
+  padding: 0 0 2.5rem 3.75rem;
+  /* color: rgba(95, 176, 199, 1); */
+  color: #eeaa7b;
 }
 
 /* Removing top margin of first h2 element in main */
 section:first-of-type h2 {
   margin-top: 0;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-link {
