@@ -58,7 +58,7 @@ section:first-of-type h2 {
 
 h2 {
   font-family: Raleway, sans-serif;
-  margin-top: 5rem; 
+  margin-top: 5rem;
 }
 
 .nav-link {
@@ -109,7 +109,6 @@ pre code {
 
 /* Negation pseudo-class used to select code elements that are not a direct child of pre element; used to apply special styling to single lines of code without affecting that applied to code elements that are descendants of pre (i.e., multi-line code) */
 :not(pre) > code {
-  line-height: 2;
   background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(95, 176, 199, 1) 100%);
   color: #fff;
   border-radius: 0.5rem;

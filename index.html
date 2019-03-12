@@ -234,12 +234,12 @@
           <ul>
             <li>Six data types that are primitives:</li><br>
             <ol>
-              <li>Boolean. true and false.</li>
-              <li>Null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
-              <li>Undefined. A top-level property whose value is undefined.</li>
-              <li>Number. 42 or 3.14159.</li>
-              <li>String. "Howdy"</li>
-              <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+              <li><strong>Boolean.</strong> true and false.</li>
+              <li><strong>Null.</strong> A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+              <li><strong>Undefined.</strong> A top-level property whose value is undefined.</li>
+              <li><strong>Number.</strong> 42 or 3.14159.</li>
+              <li><strong>String.</strong> "Howdy"</li>
+              <li><strong>Symbol.</strong> A data type whose instances are unique and immutable.</li>
             </ol>
             <br>
             <li>and Object.</li>
@@ -265,7 +265,7 @@
       }
           </code></pre>
 
-          <p>Condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, <code>statement_1</code> is executed; otherwise, <code>statement_2</code> is executed. <code>statement_1</code> and <code>statement_2</code> can be any statement, including further nested if statements.</p>
+          <p>Condition can be any expression that evaluates to true or false. If condition evaluates to true, <code>statement_1</code> is executed; otherwise, <code>statement_2</code> is executed. <code>statement_1</code> and <code>statement_2</code> can be any statement, including further nested if statements.</p>
           <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
 
           <pre><code>
@@ -329,9 +329,9 @@
 
           <p>To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
 
-          <p>Example:</p>
+          <p style="font-weight: bold">Example:</p>
 
-          <p>The following while loop iterates as long as n is less than three:</p>
+          <p>The following while loop iterates as long as <code>n</code> is less than three:</p>
 
           <pre><code>
       var n = 0;
@@ -345,11 +345,11 @@
           <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:</p>
 
           <ul>
-            <li>After the first pass: n = 1 and x = 1</li>
-            <li>After the second pass: n = 2 and x = 3</li>
-            <li>After the third pass: n = 3 and x = 6</li>
+            <li>After the first pass: <code>n = 1</code> and <code>x = 1</code></li>
+            <li>After the second pass: <code>n = 2</code> and <code>x = 3</code></li>
+            <li>After the third pass: <code>n = 3</code> and <code>x = 6</code></li>
           </ul>
-          <p>After completing the third pass, the condition n &lt 3 is no longer true, so the loop terminates.</p>
+          <p>After completing the third pass, the condition <code>n < 3</code> is no longer true, so the loop terminates.</p>
         </article>
       </section>
 
@@ -374,9 +374,7 @@
         }
           </code></pre>
 
-          <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
-
-          <code>return number * number;</code>
+          <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function: <code>return number * number;</code></p>
 
           <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
         </article>
