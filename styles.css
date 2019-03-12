@@ -6,8 +6,12 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Raleway, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0;
+}
+
+p, li {
+  line-height: 2.58rem;
 }
 
 .container {
@@ -36,7 +40,7 @@ nav {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: Raleway, sans-serif;
   padding: 3rem 0 0 3.75rem;
   margin-top: 0;
 }
@@ -53,7 +57,8 @@ section:first-of-type h2 {
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: Raleway, sans-serif;
+  margin-top: 5rem; 
 }
 
 .nav-link {
@@ -84,6 +89,7 @@ main a {
   font-weight: 400;
 }
 
+/* Affects the multi-line code snippets only */
 pre code {
   /* Needed for background/transition compatibility; without it, each line is separated */
   display: block;
@@ -101,6 +107,19 @@ pre code {
   transition-timing-function: linear;
 }
 
+/* Negation pseudo-class used to select code elements that are not a direct child of pre element; used to apply special styling to single lines of code without affecting that applied to code elements that are descendants of pre (i.e., multi-line code) */
+:not(pre) > code {
+  line-height: 2;
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(95, 176, 199, 1) 100%);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+/* Applies to both single and multi-line code snippets */
 code:hover {
   transform: scale(1.01);
   box-shadow: 0 0 20px rgba(33, 33, 33, 0.5);

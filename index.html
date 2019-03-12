@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
     <link rel="shortcut icon" href="icon.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
@@ -135,11 +135,11 @@
         <article>
           <p>You can declare a variable in three ways:</p>
 
-          <p>With the keyword var. For example, <code>var x = 42</code> This syntax can be used to declare both local and global variables.</p>
+          <p>With the keyword <code>var</code>. For example, <code>var x = 42</code>. This syntax can be used to declare both local and global variables.</p>
 
-          <p>By simply assigning it a value. For example, <code>x = 42</code> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+          <p>By simply assigning it a value. For example, <code>x = 42</code>. This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
 
-          <p>With the keyword let. For example, <code>let y = 13</code> This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+          <p>With the keyword <code>let</code>. For example, <code>let y = 13</code>. This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
         </article>
       </section>
 
@@ -178,9 +178,9 @@
         </header>
 
         <article>
-          <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+          <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the <code>window.variable</code> syntax.</p>
 
-          <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+          <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called <code>phoneNumber</code> is declared in a document, you can refer to this variable from an <code>iframe</code> as <code>parent.phoneNumber</code>.</p>
         </article>
       </section>
 
@@ -196,7 +196,7 @@
       const PI = 3.14;
           </code></pre>
 
-          <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
+          <p>A constant cannot change value through assignment or be redeclared while the script is running. It has to be initialized to a value.</p>
 
           <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
 
@@ -265,7 +265,7 @@
       }
           </code></pre>
 
-          <p>Condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+          <p>Condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, <code>statement_1</code> is executed; otherwise, <code>statement_2</code> is executed. <code>statement_1</code> and <code>statement_2</code> can be any statement, including further nested if statements.</p>
           <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
 
           <pre><code>
@@ -280,7 +280,7 @@
       }
           </code></pre>
 
-          <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
+          <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }). In general, it's good practice to always use block statements, especially when nesting if statements:</p>
 
           <pre><code>
       if (condition) {
@@ -376,10 +376,7 @@
 
           <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
 
-          <!-- Single line of code, but using pre just for consistent style -->
-          <pre><code>
-      return number * number;
-          </code></pre>
+          <code>return number * number;</code>
 
           <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
         </article>
